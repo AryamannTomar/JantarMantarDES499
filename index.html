@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HomePage</title>
+  </head>
+  <style>
+    @import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+
+    .main {
+      margin-left: 20px;
+    }
+    
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .heading {
+      color: white;
+      font-size: 24px;
+      font-family: "Roboto", sans-serif;
+    }
+
+    .paraBack {
+      color: white;
+      font-size: 15px;
+      font-family: "Roboto", sans-serif;
+      padding: 20px;
+    }
+
+    .flip-card {
+      display: inline-block;
+      background-color: transparent;
+      width: 301px;
+      height: 355px;
+      perspective: 1000px;
+      padding: 12px;
+    }
+
+    .flip-card-inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      transition: transform 0.6s;
+      transform-style: preserve-3d;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      backface-visibility: hidden;
+      -moz-backface-visibility: hidden;
+    }
+
+    .flip-card:focus {
+      outline: 0;
+    }
+
+    .flip-card:hover .flip-card-inner,
+    .flip-card:focus .flip-card-inner {
+      transform: rotateY(180deg);
+    }
+
+    .flip-card-front,
+    .flip-card-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+    }
+
+    .flip-card-front {
+      background: linear-gradient(to left, #4364f7, #6fb1fc);
+      color: black;
+      z-index: 2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .flip-card-back {
+      background: linear-gradient(to right, #4364f7, #6fb1fc);
+      color: white;
+      transform: rotateY(180deg);
+      z-index: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .title{
+      background-image: url("https://images.unsplash.com/photo-1529641484336-ef35148bab06?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+  font-family: Roboto;
+  background-position: center;
+  background-repeat: no-repeat;
+      color: #4da6ff;
+    }
+    .button {
+  text-align: center;
+  font-size: 16px;
+         background-color: #4da6ff;
+   margin-top: 1px;
+         padding:7px;
+         font-family: Roboto;
+         border: solid #1a75ff 3px;
+         color: white;
+    }
+  </style>
+  <body>
+    <div class="main">
+      <div style="background-color: skyblue;
+  text-align: center;
+  font-size: 30px;
+  font-family: Roboto;
+  font-weight: bold;
+  color: #005CE5;
+  font-weight: 600; text-shadow: 2px 2px #8f9eff;">Jantar Mantar Website Header - IITGN COURSE PROJECT</div>
+      <div class="title"><h1 style="text-align: center; font-size: 70px;
+        font-weight: 600; text-shadow: 2px 2px #b3faff;">Jantar Mantar</h1>
+      <h2 style="text-align: center; font-size: 55px;
+        font-weight: 600; text-shadow: 2px 2px #b3faff;">&lt Interactive &gt</h2></div>
+      
+      <a href="Samrat Yantra Info.html">
+      <div class="flip-card" tabindex="0">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <div class="front">
+              <div class="image">
+                <img
+              src="https://i.ibb.co/wpgwCmF/samratyantra.jpg"
+                  alt="samratyantra"
+                  width="310px"
+                  height="322px"
+                />
+              </div>
+              <div class="heading">Samrat Yantra</div>
+            </div>
+          </div>
+          <div class="flip-card-back">
+            <div>
+            <h1 style= "margin-top: 20px; font-family: Roboto;">Samrat Yantra</h1>
+            <div class="paraBack">
+              Lorem Ipsum Sed velit dignissim sodales ut. Est lorem ipsum dolor sit. A cras semper auctor neque vitae tempus quam pellentesque. Semper feugiat nibh sed pulvinar. Laoreet non curabitur gravidaarcu ac tortor dignissim convallis aenean. Orci a scelerisque ads.
+            </div>
+            <button class="button">Read More...</button>
+            </div>
+          </div>
+        </div>
+      </div></a>
+
+      <a href="SunDial Info.html">
+      <div class="flip-card" tabindex="0">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <div class="front">
+              <div class="image">
+                <img
+     src="https://media.istockphoto.com/vectors/vector-illustration-with-a-sundial-an-ancient-way-of-determining-time-vector-id1226721136?k=20&m=1226721136&s=612x612&w=0&h=07NEwjOhjs1KqekybuUid4Q_nu0Dq5iOBcPjXCo2TDU="
+                  alt="sundial"
+                  width="310px"
+                  height="322px"
+                />
+              </div>
+              <div class="heading">Sun Dial</div>
+            </div>
+          </div>
+          <div class="flip-card-back">
+            <div>
+            <h1 style= "margin-top: 20px; font-family: Roboto;">Sun Dial</h1>
+            <div class="paraBack">
+              Lorem Ipsum Sed velit dignissim sodales ut. Est lorem ipsum dolor sit. A cras semper auctor neque vitae tempus quam pellentesque. Semper feugiat nibh sed pulvinar. Laoreet non curabitur gravidaarcu ac tortor dignissim convallis aenean. Orci a scelerisque ads.
+            </div>
+              <button class="button">Read More...</button>
+            </div>
+          </div>
+        </div>
+      </div></a>
+
+      <a href="Coming Soon Info.html">
+      <div class="flip-card" tabindex="0">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <div class="front">
+              <div class="image">
+                <img
+                  src="https://i.ibb.co/J5DcgS7/JM.jpg"
+                  alt="JM"
+                  width="310px"
+                  height="322px"
+                />
+              </div>
+              <div class="heading">Coming Soon</div>
+            </div>
+          </div>
+          <div class="flip-card-back">
+            <div>
+            <h1 style= "margin-top: 20px; font-family: Roboto;">Coming Soon</h1>
+            <div class="paraBack">
+              Lorem Ipsum Sed velit dignissim sodales ut. Est lorem ipsum dolor sit. A cras semper auctor neque vitae tempus quam pellentesque. Semper feugiat nibh sed pulvinar. Laoreet non curabitur gravidaarcu ac tortor dignissim convallis aenean. Orci a scelerisque ads.
+            </div>
+              <button class="button">Read More...</button>
+            </div>
+          </div>
+        </div>
+      </div></a>
+  </body>
+</html>
